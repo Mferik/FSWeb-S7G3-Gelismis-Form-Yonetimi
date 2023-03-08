@@ -1,0 +1,30 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(black,gray);
+}
+.form-wrapper{
+  height: 50%;
+  width: 25%;
+  margin-right: 50px;
+}
+.userForm{
+  color: antiquewhite;
+  font-style: italic;
+  font-weight: bold;
+  
+}
+
+.form-label{
+  text-align: left;
+}
+.member-list{
+  color: antiquewhite;
+ 
+}
+
+
+
