@@ -21,7 +21,9 @@ const userForm = ({
       <h2 className="text-warning">Kayıt Ol</h2>
       <Form onSubmit={handleSubmit} className="userForm">
         <FormGroup>
-          <Label for="name" className="form-label">İsim Soyisim</Label>
+          <Label for="name" className="form-label">
+            İsim Soyisim
+          </Label>
           <Input
             type="text"
             name="name"
@@ -73,7 +75,7 @@ const userForm = ({
               invalid={errors.terms}
             />
           </Label>
-          <FormFeedback>{errors.terms}</FormFeedback>
+          <FormFeedback className="form-feedback">{errors.terms}</FormFeedback>
         </FormGroup>
 
         <Button

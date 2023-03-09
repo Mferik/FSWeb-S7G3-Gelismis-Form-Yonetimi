@@ -7,7 +7,9 @@ import axios from "axios";
 import List from "./Components/List";
 
 let formSchema = Yup.object().shape({
-  name: Yup.string().required("İsminizi girmelisiniz."),
+  name: Yup.string()
+  .min(5,"İsminiz en az 5 karakterden oluşmalıdır")
+  .required("İsminizi girmelisiniz."),
 
   email: Yup.string()
     .email("Geçerli bir e-mail giriniz")
